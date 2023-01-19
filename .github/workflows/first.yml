@@ -5,20 +5,20 @@ name: first
 on: push
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs: 
-    first_job:
+jobs:
+    job1:
       name: First Job
       runs-on: ubuntu-latest
       steps:
-	- name: Step one
-	  uses: actions/checkout@v2
-	- name: Step two
-	  run: env | sort
-    job_2:
-	name: Second Job
-	runs-on: windows-latest
-	steps:
-	- name: Step-one
+        - name: Step one
+          uses: actions/checkout@v2
+        - name: Step two
+          run: env | sort
+    job2:
+        name: Second Job
+        runs-on: windows-latest
+        steps:
+        - name: Step-one
           uses: actions/checkout@v2
         - name: Step-two
-          run: "Get-ChildItem Env: | sort-Object Name"
+          run: "Get-ChildItem Env: | sort-Object Name" 
