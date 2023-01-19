@@ -1,5 +1,4 @@
 # This is a basic workflow to help you get started with Actions
-
 name: first
 
 # Controls when the workflow will run
@@ -8,9 +7,9 @@ on: push
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: 
     job1:
-	name: First Job 
+	name: First Job
 	runs-on: ubuntu-latest
-	steps: 
+	steps:
 	- name: Step one
 	  uses: actions/checkout@v2
 	- name: Step two
