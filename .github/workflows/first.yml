@@ -6,7 +6,7 @@ on: push
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: 
-    First_Job:
+    first_job:
 	name: First Job
 	runs-on: ubuntu-latest
 	steps:
