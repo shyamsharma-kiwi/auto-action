@@ -3,15 +3,15 @@ name: first
 on: push
 
 jobs: 
-    jobs1:
+    job1:
 	name: First job
 	run-on: ubuntu-latest
 	steps: 
-		- name: Step one
+                - name: Step one
 		  uses: actions/checkout@v2
 		- name: Step two
 		  run: env | sort
-    jobs2:
+    job2:
 	name: Second job
 	run-on: windows-latest
 	steps:
