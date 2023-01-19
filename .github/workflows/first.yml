@@ -8,15 +8,15 @@ on: push
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: 
     job1:
-	build: First-job 
+	name: First Job 
 	runs-on: ubuntu-latest
 	steps: 
-	- name: Step-one
-	- uses: actions/checkout@v2
-	- name: Step-two
+	- name: Step one
+	  uses: actions/checkout@v2
+	- name: Step two
 	  run: env | sort
     job2:
-	build: Second-job
+	name: Second Job
 	runs-on: windows-latest
 	steps:
 	- name: Step-one
